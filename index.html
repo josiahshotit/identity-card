@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My first web page</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 20px;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first web page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f3f3f3;
+        }
 
-            img {
-                width: 100px;
-                border: 2px solid #000;
-                margin-left: 10px;
-            }
+        .profile-card {
+            width: 320px;
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-            .username {
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>(NITDA)</h1>
+        .profile-image {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #0f5132;
+            display: block;
+            margin: 0 auto 15px;
+        }
 
-        <img src="images/jazzy.jpg" alt="Profile Picture" />
-
+        .username {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img class="profile-image" src="images/profile.jpg" alt="Profile Picture">
         <p class="username">EMMANUEL UNEKWUOJO JOSIAH</p>
         <p>IDENTITY CARD</p>
         <p>DOD: 17/FEB/1997</p>
         <p>Phone: 09037343964</p>
         <p>Blood: O+</p>
         <p>Email: josiahshotit@gmail.com</p>
-    </body>
+    </div>
+</body>
 </html>
